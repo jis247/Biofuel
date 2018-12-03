@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0252B030-C033-48FC-B2CD-98AAEF674CA2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Biofuel.My.MyApplication</StartupObject>
+    <RootNamespace>Biofuel</RootNamespace>
+    <AssemblyName>Biofuel</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Jis\Desktop\sam\jin\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Biofuel.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Biofuel.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4EDDA16B5A5875ADF94C48916D47803D72FC4014</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Biofuel_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Customer_bill2.Designer.vb">
+      <DependentUpon>Customer_bill2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_bill2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_bill_rep.Designer.vb">
+      <DependentUpon>Customer_bill_rep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_bill_rep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Customer_bill_rep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Farmer_bill.Designer.vb">
+      <DependentUpon>Farmer_bill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Farmer_bill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Farmer_bill_rep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Farmer_bill_rep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Paackage_frm.Designer.vb">
+      <DependentUpon>Paackage_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Paackage_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Package.Designer.vb">
+      <DependentUpon>Package.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Package.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Package_rep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Package_rep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Process_rep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Process_rep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Process_rep1.Designer.vb">
+      <DependentUpon>Process_rep1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Process_rep1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process_rep21.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Process_rep2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Proc_rep6.Designer.vb">
+      <DependentUpon>Proc_rep6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Proc_rep6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sales_rpt.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sales_rpt.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Farmer_frm.Designer.vb">
+      <DependentUpon>Farmer_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Farmer_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_frm.Designer.vb">
+      <DependentUpon>Customer_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customer_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Process_frm.Designer.vb">
+      <DependentUpon>Process_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Process_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Newuser_frm.Designer.vb">
+      <DependentUpon>Newuser_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Newuser_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchase_rept.Designer.vb">
+      <DependentUpon>Purchase_rept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Purchase_rept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales_rept.Designer.vb">
+      <DependentUpon>Sales_rept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Sales_rept.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storage_frm.Designer.vb">
+      <DependentUpon>Storage_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Storage_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_bill.Designer.vb">
+      <DependentUpon>Supplier_bill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier_bill.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_bill_rep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Supplier_bill_rep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="temp.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>temp.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Worker_frm.Designer.vb">
+      <DependentUpon>Worker_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Worker_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rate_frm.Designer.vb">
+      <DependentUpon>Rate_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rate_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.vb">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supplier_frm.Designer.vb">
+      <DependentUpon>Supplier_frm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Supplier_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_frm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login_frm.Designer.vb">
+      <DependentUpon>Login_frm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Customer_bill2.resx">
+      <DependentUpon>Customer_bill2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_bill_rep.resx">
+      <DependentUpon>Customer_bill_rep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_bill_rep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Customer_bill_rep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Farmer_bill.resx">
+      <DependentUpon>Farmer_bill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Farmer_bill_rep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Farmer_bill_rep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paackage_frm.resx">
+      <DependentUpon>Paackage_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Package.resx">
+      <DependentUpon>Package.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Package_rep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Package_rep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process_rep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Process_rep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process_rep1.resx">
+      <DependentUpon>Process_rep1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process_rep2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Process_rep21.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Proc_rep6.resx">
+      <DependentUpon>Proc_rep6.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sales_rpt.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>sales_rpt.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Farmer_frm.resx">
+      <DependentUpon>Farmer_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_frm.resx">
+      <DependentUpon>Customer_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Newuser_frm.resx">
+      <DependentUpon>Newuser_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Process_frm.resx">
+      <DependentUpon>Process_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Purchase_rept.resx">
+      <DependentUpon>Purchase_rept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sales_rept.resx">
+      <DependentUpon>Sales_rept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage_frm.resx">
+      <DependentUpon>Storage_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rate_frm.resx">
+      <DependentUpon>Rate_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_bill.resx">
+      <DependentUpon>Supplier_bill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_bill_rep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Supplier_bill_rep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supplier_frm.resx">
+      <DependentUpon>Supplier_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login_frm.resx">
+      <DependentUpon>Login_frm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="temp.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>temp.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Worker_frm.resx">
+      <DependentUpon>Worker_frm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Biofuel_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="maxresdefault.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="homepageheadline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="depo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="aqua_abstract-HD.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="_downloadfiles_wallpapers_1280_1024_green_wallpaper_abstract_other_3314.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Blue-Background-Wallpaper-16274.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="dummy_banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="naviBanner_r2_c1_s1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="biofuel-biomass-ethano.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SetWidth400-eeca-biofuel.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
